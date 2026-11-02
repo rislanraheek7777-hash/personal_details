@@ -27,6 +27,8 @@ if (isset($_GET["image"]) && ($_GET["image"]) == "fail") {
         <input type="file" name="image"><br><br>
         <label for="about">About: </label>
         <textarea name="about" id=""></textarea><br><br>
+        <label for="date">Date: </label>
+        <input type="datetime-local" name="date"><br><br>
         <input type="submit" value="submit" name="details">
     </form>
     <button><a href="view.php">details</a></button>

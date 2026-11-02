@@ -6,6 +6,7 @@ if (!empty($_POST['details'])) {
     $name = $_POST['name'];
     $phone = $_POST['phone_number'];
     $about = $_POST['about'];
+    $date = $_POST['date'];
 
     $image_name = $_FILES['image']['name'];
     $image_tmp = $_FILES['image']['tmp_name'];
@@ -15,7 +16,7 @@ if (!empty($_POST['details'])) {
     $upload = move_uploaded_file($image_tmp, $folder);
 
     if ($upload == true) {
-        $insert_sql =  "INSERT INTO details (name, phone, image, about) VALUES ('$name','$phone','$image_name','$about')";
+        $insert_sql =  "INSERT INTO details (name, phone, image, about, date) VALUES ('$name','$phone','$image_name','$about','$date')";
         $result = mysqli_query($conn, $insert_sql);
 
         if ($result == true) {

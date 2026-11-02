@@ -6,6 +6,7 @@ include "database.php";
         <td>Name</td>
         <td>Number</td>
         <td>About</td>
+        <td>Date & Time</td>
         <td>Image</td>
     </tr>
     <?php
@@ -20,6 +21,7 @@ include "database.php";
             <td><?php echo $details['name'] ?></td>
             <td><?php echo $details['phone'] ?></td>
             <td><?php echo $details['about'] ?></td>
+            <td><?php echo $details['date'] ?></td>
             <td><img src="image/<?php echo $details['image'] ?>" alt="No Image" height="100px" ; width="100px"></td>
         </tr>
     <?php } ?>
