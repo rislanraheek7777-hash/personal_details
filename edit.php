@@ -28,6 +28,9 @@ if (isset($_GET["edit_id"])) {
         <label for="phone num"> Phone Number: </label>
         <input type="tel" placeholder="Phone Number" name="phone_number" value="<?php echo $fetched_result['phone'] ?>"><br><br>
 
+        <label for="c_image">Current Image:</label>
+        <img src="image/<?php echo $fetched_result['image'] ?>" alt="no image" height="100px" width="100px"><br><br>
+
         <label for="image">Image: </label>
         <input type="file" name="image"><br><br>
         <input type="hidden" name="old_image" value="<?php echo $fetched_result['image'] ?>">
