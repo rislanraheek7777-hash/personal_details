@@ -30,8 +30,8 @@ if (isset($_GET["image"]) && ($_GET["image"]) == "fail") {
         <label for="date">Date: </label>
         <input type="datetime-local" name="date"><br><br>
         <input type="submit" value="submit" name="details">
-    </form><br><br>
-    <button><a href="view.php">details</a></button>
+    </form>
+    <button><a href="view.php" style="text-decoration: none;">details</a></button>
 </body>
 
 </html>
